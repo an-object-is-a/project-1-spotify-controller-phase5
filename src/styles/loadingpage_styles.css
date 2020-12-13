@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Old School Adventures";
+    src: url("../fonts/Old School Adventures-847a.woff");
+}
+
+#chrome-ext-container_loadingpage {
+    font-family: 'Old School Adventures';
+    font-size: 30px;
+    color: white;
+}
+
+#chrome-ext-loading_screen {
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+#chrome-ext-loading_text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}

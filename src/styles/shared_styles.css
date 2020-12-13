@@ -1,0 +1,10 @@
+.chrome-ext-sub_container {
+    z-index: 50;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: inherit;
+    height: inherit;
+}

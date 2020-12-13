@@ -1,0 +1,34 @@
+#chrome-ext-container_ticker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 75;
+}
+
+#chrome-ext-ticker_background {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 8%;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid ghostwhite;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+#chrome-ext-ticker_text {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    position: relative;
+    font-family: monospace;
+    color: white;
+    white-space: nowrap;
+}

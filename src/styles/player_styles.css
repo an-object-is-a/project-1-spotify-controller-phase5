@@ -1,0 +1,35 @@
+/*********** opening and closing player **********/
+.chrome-ext-flip-appear {
+    transform: translateY(0%);
+}
+
+.chrome-ext-flip-appear-active {
+    transform: translateY(100%);
+    transition: transform 0ms;
+}
+
+.chrome-ext-flip-enter {
+    transform: translateY(0%);
+}
+
+.chrome-ext-flip-enter-active {
+    transform: translateY(100%);
+    transition: transform 1000ms;
+}
+
+.chrome-ext-flip-enter-done {
+    transform: translateY(100%);
+}
+
+.chrome-ext-flip-exit {
+    transform: translateY(100%);
+}
+
+.chrome-ext-flip-exit-active {
+    transform: translateY(0%);
+    transition: transform 1000ms;
+}
+
+.chrome-ext-flip-exit-done {
+    transform: translateY(0%);
+}

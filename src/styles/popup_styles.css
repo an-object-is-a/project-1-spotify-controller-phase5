@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Old School Adventures";
+    src: url("../fonts/Old School Adventures-847a.woff");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#chrome-ext-container_popup {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    background-color: #1E1E1E;
+
+    text-align: center;
+    font-family: 'Old School Adventures';
+    color: white;
+    user-select: none;
+}
+
+.chrome-ext-popup_name {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.chrome-ext-sign_in_out {
+    margin: 10px auto;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 3px;
+
+    font-size: 20px;
+    background-color: red;
+    cursor: pointer;
+}

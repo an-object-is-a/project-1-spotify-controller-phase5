@@ -1,0 +1,44 @@
+#chrome-ext-container_playerbuttons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.chrome-ext-playerbuttons {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#chrome-ext-button_open_close {
+    width: 16.95%;
+    height: calc(16.95% * 0.8);
+    right: 12%;
+    background-color: #FF6D2A;
+}
+
+#chrome-ext-button_play_pause {
+    width: 12.95%;
+    height: calc(14.95% * 0.8);
+    right: 30%;
+    background-color: blue;
+}
+
+#chrome-ext-button_next {
+    width: 10.95%;
+    height: calc(12.95% * 0.8);
+    right: 50%;
+    background-color: red;
+}
+
+#chrome-ext-button_previous {
+    width: 10.95%;
+    height: calc(12.95% * 0.8);
+    right: 65%;
+    background-color: black;
+}

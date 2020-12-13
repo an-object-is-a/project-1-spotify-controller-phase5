@@ -1,0 +1,45 @@
+.chrome-ext-modal {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* bottom: 0; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    user-select: none;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 99999999999;
+}
+
+.chrome-ext-container {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+
+/*********** animation/transition for csstransitiongroup *********/
+.chrome-ext-swipe-transition-enter {
+    clip-path: polygon(136.4% -20%, 136.4% -20%, 100% 100%, 100% 100%);
+}
+
+.chrome-ext-swipe-transition-enter-active {
+    clip-path: polygon(0% -20%, 136.4% -20%, 100% 100%, -36.4% 100%);
+    transition: clip-path 500ms linear;
+}
+
+.chrome-ext-swipe-transition-exit {
+    clip-path: polygon(0% -20%, 136.4% -20%, 100% 100%, -36.4% 100%);
+}
+
+.chrome-ext-swipe-transition-exit-active {
+    clip-path: polygon(0% -20%, 0% -20%, -36.4% 100%, -36.4% 100%);
+    transition: clip-path 500ms linear;
+}

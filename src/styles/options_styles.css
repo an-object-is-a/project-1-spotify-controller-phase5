@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Old School Adventures";
+    src: url("../fonts/Old School Adventures-847a.woff");
+}
+
+body {
+    margin: 0;
+}
+
+#chrome-ext-container_options {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #1E1E1E;
+}
+
+.chrome-ext-options_page {
+    box-sizing: border-box;
+    margin: 0;
+    height: 60%;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Old School Adventures';
+    color: white;
+    user-select: none;
+    pointer-events: all;
+}
+
+.chrome-ext-options_name {
+    width: 100%;
+    height: fit-content;
+
+    text-align: center;
+}
+
+.chrome-ext-options_navigator {
+    margin: 0 auto;
+    width: 50%;
+    height: fit-content;
+
+    text-align: center;
+}
+
+#chrome-ext-prev,
+#chrome-ext-next {
+    margin: 0 5%;
+    display: inline-block;
+
+    cursor: pointer;
+}
+
+.chrome-ext-options_content {
+    margin: 2% auto 0 auto;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.chrome-ext-deck_type {
+    margin-top: 5px;
+    width: 100%;
+    height: fit-content;
+
+    text-align: center;
+}
+
+
+/*********** animation/transition for csstransitiongroup *********/
+
+/****** chrome-ext-slide next *****/
+
+.chrome-ext-slide-next-enter {
+    transform: translateX(100vw);
+}
+
+.chrome-ext-slide-next-enter-active {
+    transform: translateX(0%);
+    transition: transform 300ms;
+}
+
+.chrome-ext-slide-next-enter-done {
+    transform: translateX(0%);
+}
+
+.chrome-ext-slide-next-exit {
+    transform: translateX(0%);
+}
+
+.chrome-ext-slide-next-exit-active {
+    transform: translateX(-100vw);
+    transition: transform 300ms;
+}
+
+.chrome-ext-slide-next-exit-done {
+    transform: translateX(-100vw);
+}
+
+
+/****** chrome-ext-slide previous *****/
+
+.chrome-ext-slide-prev-enter {
+    transform: translateX(-100vw);
+}
+
+.chrome-ext-slide-prev-enter-active {
+    transform: translateX(0%);
+    transition: transform 300ms;
+}
+
+.chrome-ext-slide-prev-enter-done {
+    transform: translateX(0%);
+}
+
+.chrome-ext-slide-prev-exit {
+    transform: translateX(0%);
+}
+
+.chrome-ext-slide-prev-exit-active {
+    transform: translateX(100vw);
+    transition: transform 300ms;
+}
+
+.chrome-ext-slide-prev-exit-done {
+    transform: translateX(100vw);
+}
