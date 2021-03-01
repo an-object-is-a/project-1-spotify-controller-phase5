@@ -3,7 +3,7 @@ let active_tabId = null;
 const CLIENT_ID = encodeURIComponent('972083071fb34e259b95d81ca0ac085b'),
     RESPONSE_TYPE = encodeURIComponent('code'),
     REDIRECT_URI = encodeURIComponent(chrome.identity.getRedirectURL()),
-    CODE_CHALLENDGE_METHOD = encodeURIComponent('S256'),
+    CODE_CHALLENGE_METHOD = encodeURIComponent('S256'),
     SCOPE = encodeURIComponent('user-modify-playback-state user-read-playback-state'),
     SHOW_DIALOG = encodeURIComponent('true');
 
@@ -24,7 +24,7 @@ function clear_tokens() {
     user_signed_in = false;
 }
 
-function get_authorization_code_endpoint() {
+function get_authorization_code_point() {
     return new Promise(async (resolve, reject) => {
         CODE_VERIFIER = rand_string().repeat('5');
         const code_challenge = base64urlencode(await sha256(CODE_VERIFIER));
@@ -35,7 +35,7 @@ function get_authorization_code_endpoint() {
 ?client_id=${CLIENT_ID}
 &response_type=${RESPONSE_TYPE}
 &redirect_uri=${REDIRECT_URI}
-&code_challenge_method=${CODE_CHALLENDGE_METHOD}
+&code_challenge_method=${CODE_CHALLENGE_METHOD}
 &code_challenge=${code_challenge}
 &state=${STATE}
 &scope=${SCOPE}
